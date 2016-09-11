@@ -156,7 +156,19 @@ class ResearcherPageController extends Controller
     ]);
 
     return redirect()->back();
+  }
 
+  public function postInsertWorkHistory(Request $request)
+  {
+    DB::table('researcher_work_histories')->insert([
+      'researcher_id' =>  1,
+      'year_start'    =>  $request->from,
+      'year_end'      =>  $request->current,
+      'position'      =>  $request->position,
+      'institution'   =>  $request->institution,
+      'job'           =>  $request->work_job
+    ]);
+    return redirect()->back();
   }
 
 }

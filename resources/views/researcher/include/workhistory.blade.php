@@ -114,7 +114,7 @@
                           <div class="col-sm-4" style="margin-right:20px; padding-left:0px">
                             <div class="input-group col-sm-4"  >
                               <span class="input-group-addon" id="basic-addon1">จาก</span>
-                              <input id="yearMask1" type="text" placeholder="yyyy"
+                              <input id="yearMask1" type="text" name="from" placeholder="yyyy"
                                 class="form-control" style="width:90px" value=""
                                 required=""/>
                             </div>
@@ -122,7 +122,7 @@
                           <div class="col-sm-4" style="padding-left:0px">
                             <div class="input-group col-sm-4">
                               <span class="input-group-addon" id="basic-addon2">ถึง&nbsp;&nbsp;</span>
-                              <input id="yearMask2" type="text" placeholder="yyyy"
+                              <input id="yearMask2" type="text" name="current" placeholder="yyyy"
                                class="form-control" style="width:90px" required=""/>
                             </div>
                           </div>
